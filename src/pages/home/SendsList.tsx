@@ -6,6 +6,7 @@ export const SendsList = ({sends}:any) =>{
     console.log(response);
     return(
         <ul className={styles.transactions}>
+            <h2>Recent Sends</h2>
             {sends.map((send:any) =>(
                 <li key={send.id}>
                     <p className={styles.name}>{send.grade}</p>

@@ -8,6 +8,7 @@ import { useAuthContext } from './hooks/useAuthContext'
 
 function App() {
   const {authIsReady, user}:any = useAuthContext();
+  
   return (
     <div className="App">
       {authIsReady && (
