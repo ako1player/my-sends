@@ -4,12 +4,12 @@ import 'firebase/compat/auth'
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDlX9xp6rslo5YiVbzVOXM26lLPLCiyFn8",
-    authDomain: "mysends-322a2.firebaseapp.com",
-    projectId: "mysends-322a2",
-    storageBucket: "mysends-322a2.appspot.com",
-    messagingSenderId: "41387525652",
-    appId: "1:41387525652:web:85889c2124a37618c98901"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID
   };
 
   //init firebase
